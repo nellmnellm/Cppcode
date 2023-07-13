@@ -30,7 +30,7 @@
     <ClCompile Include="x64\01.입출력과 사칙연산\bj10998.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="x64\01.입출력과 사칙연산\18108.cpp">
+    <ClCompile Include="x64\01.입출력과 사칙연산\bj18108.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="x64\02.조건\bj1330.cpp">
@@ -156,7 +156,10 @@
     <ClCompile Include="x64\06.심화 1\bj1316.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="x64\06.심화 1\1316-2.cpp">
+    <ClCompile Include="x64\06.심화 1\bj1316-2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\06.심화 1\bj25206.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
