@@ -207,5 +207,23 @@
     <ClCompile Include="x64\09. 약수, 배수와 소수\bj11653.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="x64\10. 기하. 직사각형과 삼각형\bj27323.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\10. 기하. 직사각형과 삼각형\bj1085.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\10. 기하. 직사각형과 삼각형\bj3009.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\10. 기하. 직사각형과 삼각형\bj15894.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\10. 기하. 직사각형과 삼각형\bj9063.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\10. 기하. 직사각형과 삼각형\bj10101.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
