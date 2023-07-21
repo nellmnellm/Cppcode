@@ -225,5 +225,38 @@
     <ClCompile Include="x64\10. 기하. 직사각형과 삼각형\bj10101.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="x64\11. 시간 복잡도\bj24313.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\12. 브루트 포스\bj2798.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\12. 브루트 포스\bj2231.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\12. 브루트 포스\bj19532.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\12. 브루트 포스\bj1018.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\12. 브루트 포스\bj1436.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\12. 브루트 포스\bj2839.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\13. 정렬\bj2750.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\13. 정렬\bj2587.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\13. 정렬\bj25305.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\13. 정렬\bj2751.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
