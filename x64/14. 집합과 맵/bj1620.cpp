@@ -3,6 +3,7 @@
 #include <map>
 #include <string>
 #include <algorithm>
+#include <cmath>
 using namespace std;
 
 int main(void)
@@ -15,9 +16,9 @@ int main(void)
 	map <int, string> poke2;
 	for (int i = 0; i < n; i++)
 	{
-		string s; 
+		string s;
 		cin >> s;
-		poke[s] = i+1;
+		poke[s] = i + 1;
 		poke2[i + 1] = s;
 	}
 
@@ -27,17 +28,18 @@ int main(void)
 		cin >> s;
 		if ((int)s[0] >= '0' && (int)s[0] <= '9')
 		{
-			if (s.length() == 1)
-				cout << poke2[(int)s[0]-(int)'0'] << "\n";
-			else if (s.length() == 2)
-				cout << poke2[((int)s[0]-(int)'0') * 10 + ((int)s[1]-(int)'0')] << "\n";
+			int convert_num = 0;
+			for (int i = 0; i < s.length(); i++)
+			{
+				if (s.length() == 1)
+					convert_num += ((int)s[0] - (int)'0');
+				else
+					convert_num += ((int)s[i] - (int)'0') * ((int)pow(10, s.length() - i - 1));
+			}
+			cout << poke2[convert_num] << "\n";
 		}
-			
 		else
-			cout << poke[s];
-		
+			cout << poke[s] << "\n";
 	}
-
-
 	return 0;
 }
