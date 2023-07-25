@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿  bj1067.cpp
-  Cppcode.vcxproj -> C:\Users\nellm\source\repos\Cppcode\x64\Debug\Cppcode.exe
-=======
-﻿  bj1620.cpp
-  Cppcode.vcxproj -> C:\source\repos\Cppcode\Cppcode\x64\Debug\Cppcode.exe
->>>>>>> 04b1f9eef499c400101cfd37280cc54334928818
-=======
-﻿  bj1620.cpp
-  Cppcode.vcxproj -> C:\source\repos\Cppcode\Cppcode\x64\Debug\Cppcode.exe
->>>>>>> 04b1f9eef499c400101cfd37280cc54334928818
+﻿  bj10816.cpp
+  LINK : C:\Users\nellm\source\repos\Cppcode\Cppcode\x64\Debug\Cppcode.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  Cppcode.vcxproj -> C:\Users\nellm\source\repos\Cppcode\Cppcode\x64\Debug\Cppcode.exe

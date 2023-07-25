@@ -391,10 +391,13 @@
     <ClCompile Include="x64\14. 집합과 맵\bj10815.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="x64\14. 집합과 맵\bj10816.cpp" />
     <ClCompile Include="x64\14. 집합과 맵\bj14425.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="x64\14. 집합과 맵\bj1620.cpp" />
+    <ClCompile Include="x64\14. 집합과 맵\bj1620.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="x64\14. 집합과 맵\bj7785-2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
