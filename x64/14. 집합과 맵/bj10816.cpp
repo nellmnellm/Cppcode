@@ -1,13 +1,15 @@
 #include <iostream>
-#include <map>
+#include <unordered_map>
 #include <algorithm>
 using namespace std;
 
 int main(void)
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 	int n;
 	cin >> n;
-	map <int, int> nummap;
+	unordered_map <int, int> nummap;
 	for (int i = 0; i < n; i++)
 	{
 		int num;
