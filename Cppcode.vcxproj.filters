@@ -333,5 +333,14 @@
     <ClCompile Include="x64\15. 약수, 배수와 소수 2\bj4134.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="x64\15. 약수, 배수와 소수 2\bj1929.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\15. 약수, 배수와 소수 2\bj4948.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\15. 약수, 배수와 소수 2\bj17103.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
