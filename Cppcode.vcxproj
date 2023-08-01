@@ -421,7 +421,12 @@
     <ClCompile Include="x64\15. 약수, 배수와 소수 2\bj13241.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="x64\15. 약수, 배수와 소수 2\bj17103.cpp" />
+    <ClCompile Include="x64\15. 약수, 배수와 소수 2\bj13909.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="x64\15. 약수, 배수와 소수 2\bj17103.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="x64\15. 약수, 배수와 소수 2\bj1735.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

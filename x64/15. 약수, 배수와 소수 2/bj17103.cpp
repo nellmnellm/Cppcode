@@ -1,17 +1,22 @@
 #include <iostream>
-#include <vector>
+#include <array>
+#include <algorithm>
 #include <cmath>
 
 using namespace std;
 
+
+
+	
 int main(void)
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
-
-	vector <int> vec;
-
-	for (int i = 3; i <= 999997; i++)
+	
+	array <bool, 499999> arr = { false, };
+	
+	
+	for (int i=3; i<=999999; i += 2)
 	{
 		bool sosu = true;
 
@@ -27,37 +32,35 @@ int main(void)
 
 		if (sosu == true)
 		{
-			vec.push_back(i);
+			arr[((i - 1) / 2) - 1] = true;
 		}
 	}
 
 	int T;
 	cin >> T;
-	for (int i=0; i<T; i++)
+	for (int i = 0; i < T; i++)
 	{
 		int N;
 		cin >> N;
 		int part = 0;
 
-		for (int j = 0; j < vec.size(); j++)
+		if (N == 4)
+			part += 2;
+		for (int j=0; j<=N/2 - 3; j++)
 		{
-			if (N <= 8)
+			if (arr[j] && arr[N / 2 - 3 - j])
 			{
-				part+=2;
-				break;
-			}
-
-			for (int k = vec.size() - 1; k >= 0; k--)
-			{
-				if (vec[j] + vec[k] == N)
-				{
+				if (j == N / 2 - 3 - j)
+					part += 2;
+				else
 					part++;
-					break;
-				}
 			}
 		}
+
+
 		cout << part / 2 << "\n";
 	}
+
 
 	return 0;
 }
