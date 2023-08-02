@@ -45,20 +45,21 @@ int main(void)
 		int part = 0;
 
 		if (N == 4)
-			part += 2;
-		for (int j=0; j<=N/2 - 3; j++)
+		{
+			part++;
+			cout << 1 << "\n";
+			continue;
+		}
+		for (int j=0; j<=(N/2 - 3)/2; j++)
 		{
 			if (arr[j] && arr[N / 2 - 3 - j])
 			{
-				if (j == N / 2 - 3 - j)
-					part += 2;
-				else
-					part++;
+				part++;
 			}
 		}
 
 
-		cout << part / 2 << "\n";
+		cout << part << "\n";
 	}
 
 
