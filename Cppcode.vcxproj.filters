@@ -357,5 +357,38 @@
     <ClCompile Include="x64\16. 스택, 큐, 덱\bj4949.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="x64\16. 스택, 큐, 덱\bj12789.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\16. 스택, 큐, 덱\bj28279.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\16. 스택, 큐, 덱\bj2346.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\16. 스택, 큐, 덱\bj11866.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\16. 스택, 큐, 덱\bj18258.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\16. 스택, 큐, 덱\bj24511.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\20. 심화 2\bj1037.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\20. 심화 2\bj25192.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\20. 심화 2\bj26069.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\20. 심화 2\bj2108.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\20. 심화 2\bj20920.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
