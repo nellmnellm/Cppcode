@@ -22,27 +22,22 @@ string kan(int N) {
 }
 int main(void) {
 	
-	
-	while(!cin.eof())
+	string s;
+	while(cin >> s)
 	{
-		if (!cin.eof())
-			break;
-		string s;
-		getline(cin, s);
-		if (s.length() == 0)
-			return 0;
 		int num;	
 		if (s[1])
 			num = (int)(s[0] - '0') * 10 + (int)(s[1] - '0');
 		else
 			num = (int)(s[0] - '0');
 
-		cout << kan(num);
+		cout << kan(num) << '\n';
 
-		
 	}
 
 
 
 	return 0;
 }
+
+// https://www.acmicpc.net/board/view/120317 좋은 질문
