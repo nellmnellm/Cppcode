@@ -390,5 +390,26 @@
     <ClCompile Include="x64\20. 심화 2\bj20920.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="x64\21. 재귀\bj27433.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\21. 재귀\bj10870.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\21. 재귀\bj25501.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\21. 재귀\bj25501-2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\21. 재귀\bj24060-sudo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\21. 재귀\bj24060.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\21. 재귀\bj4779.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
