@@ -417,7 +417,19 @@
     <ClCompile Include="x64\21. 재귀\bj2447-memoryboom2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="x64\21. 재귀\bj11729-timeover.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="x64\21. 재귀\bj11729.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\22. 백트래킹\bj15649.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\22. 백트래킹\bj9663-timeover.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\22. 백트래킹\bj15651.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
