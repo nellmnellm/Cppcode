@@ -24,11 +24,10 @@ void manjok(int N, int M, vector<int>& vecto)
 	{
 		for (int i = 0; i < N; i++)
 		{
-			vec.push_back(i + 1);
-			vectorprint(vec);
-			vec.pop_back();
+			vecto.push_back(i + 1);
+			vectorprint(vecto);
+			vecto.pop_back();
 		}
-		vec.clear();
 	}
 	else
 	{
@@ -36,6 +35,7 @@ void manjok(int N, int M, vector<int>& vecto)
 		{
 			vec.push_back(i + 1);
 			manjok(N, M - 1, vec);
+			vecto.pop_back();
 		}
 	}
 }
