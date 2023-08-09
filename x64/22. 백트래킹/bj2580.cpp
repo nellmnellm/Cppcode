@@ -1,83 +1,101 @@
 #include <iostream>
-#include <array>
+#include <deque>
+#include <algorithm>
+#include <cmath>
 using namespace std;
 
 int main(void) {
-	array <array<int, 9>, 9> arr{};
-
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	int arr[9][9] = { 0, };
+	
+	deque < pair<int, int >> deq;
+	
 	for (int i = 0; i < 9; i++)
 	{
-		int count=0;
-		int countj=0;
-		int sum=0;
 		for (int j = 0; j < 9; j++)
 		{
 			cin >> arr[i][j];
 			if (arr[i][j] == 0)
 			{
-				count++;
-				countj += j;
+				deq.push_back(make_pair(i, j));
 			}
-			else
-				sum += arr[i][j];
 		}
-		if (count == 1)
-			arr[i][countj] = 45 - sum;
 	}
 	
-	for (int j = 0; j < 9; j++)
+	while (!deq.empty())
 	{
-		int count=0;
-		int counti=0;
-		int sum=0;
-		for (int i = 0; i < 9; i++)
-		{
-			if (arr[i][j] == 0)
-			{
-				count++;
-				counti += i;
-			}
-			else
-				sum += arr[i][j];
-		}
-		if (count == 1)
-			arr[counti][j] = 45 - sum;
-	}
+		int countx = 0; int county = 0; int countsquare = 0;
+		int sumx = 0; int sumy = 0; int sumsquare = 0;
 
-	
-	for (int i = 0; i < 3; i++)
-	{
-		
-		for (int l = 0; l < 3; l++)
+
+		pair<int, int> i = deq.back();
+		for (int j = 0; j < 9; j++)
 		{
-			int countj=0;
-			int countk=0;
-			int sum=0;
-			for (int j = 3 * i; j < 3 * i + 3; j++)
+			if (arr[i.first][j])
 			{
-				for (int k = 3 * l; k < 3 * l + 3; k++)
-				{	
-					sum += arr[j][k]; 
-					if (arr[j][k] == 0)
-					{
-						countj = j;
-						countk = k;
-					}
+				countx++;
+				sumx += arr[i.first][j];
+			}
+		}
+		if (countx == 8)
+		{
+			arr[i.first][i.second] = 45 - sumx;
+			deq.pop_back();
+			continue;
+		}
+
+		for (int j=0; j<9; j++)
+		{
+			if (arr[j][i.second])
+			{
+				county++;
+				sumy += arr[j][i.second];
+			}
+		}
+		if (county == 8)
+		{
+			arr[i.first][i.second] = 45 - sumy;
+			deq.pop_back();
+			continue;
+		}
+
+		for (int j = (int)((i.first) / 3) * 3; j <= (int)((i.first) / 3) * 3 + 2; j++)
+		{
+			for (int k = (int)((i.second) / 3) * 3; k <= (int)((i.second) / 3) * 3 + 2; k++)
+			{
+				if (arr[j][k])
+				{
+					countsquare++;
+					sumsquare += arr[j][k];
 				}
-				
 			}
-			if (sum!=45)
-				arr[countj][countk] = 45 - sum;
 		}
 
+		if (countsquare == 8)
+		{
+			arr[i.first][i.second] = 45 - sumsquare;
+			deq.pop_back();
+			continue;
+		}
+
+		if (!arr[i.first][i.second])
+		{
+			deq.push_front(deq.back());
+			deq.pop_back();
+		}
+
+		
 	}
+	
+
 	
 
 	for (int i = 0; i < 9; i++)
 	{
 		for (int j = 0; j < 9; j++)
 			cout << arr[i][j] << " ";
-		cout << endl;
+		cout << '\n';
 	}
 
 	return 0;
