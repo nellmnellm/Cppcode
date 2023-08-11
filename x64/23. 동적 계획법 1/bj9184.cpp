@@ -3,7 +3,7 @@ using namespace std;
 
 
 int arr[23][23][23];
-// -1 ~ 21 의 범위를 가지는 3차원;
+
 void arrMake() {
 	for (int i = 0; i < 23; i++)
 	{
@@ -13,32 +13,33 @@ void arrMake() {
 			{
 				if (i <= 1 || j <= 1 || k <= 1)
 					arr[i][j][k] = 1;
-				else if (i == 22 || j == 22 || k == 22)
-					arr[i][j][k] = arr[21][21][21];
+				else if (i > 21 || j > 21 || k > 21)
+					arr[i][j][k] = 1048576;
 				else if (i < j && j < k)
 					arr[i][j][k] = arr[i][j][k - 1] + arr[i][j - 1][k - 1] - arr[i][j - 1][k];
 				else
 					arr[i][j][k] = arr[i - 1][j][k] + arr[i - 1][j - 1][k] + arr[i - 1][j][k - 1] - arr[i - 1][j - 1][k - 1];
 			}
 		}
-	};
+	}
 }
 
 int w(int a, int b, int c) {
-	if (a < 0)
+	if (a <= 0)
 		a = 0;
-	if (b < 0)
+	if (b <= 0)
 		b = 0;
-	if (c < 0)
+	if (c <= 0)
 		c = 0;
-	if (a > 20)
-		a = 20;
-	if (b > 20)
-		b = 20;
-	if (c > 20)
-		c = 20;
+	if (a > 21)
+		a = 21;
+	if (b > 21)
+		b = 21;
+	if (c > 21)
+		c = 21;
+	
+	
 	return arr[a + 1][b + 1][c + 1];
-
 }
 
 int main(void) {
@@ -64,5 +65,4 @@ int main(void) {
 
 	return 0;
 }
-
 
