@@ -279,7 +279,7 @@
     <ClCompile Include="x64\13. 정렬\bj18870.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="x64\54\bj1067.cpp">
+    <ClCompile Include="x64\guitar\bj1067.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="x64\14. 집합과 맵\bj1620.cpp">
@@ -309,10 +309,10 @@
     <ClCompile Include="x64\14. 집합과 맵\bj11478.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="x64\54\bj1011.cpp">
+    <ClCompile Include="x64\guitar\bj1011.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="x64\54\bj1011-2.cpp">
+    <ClCompile Include="x64\guitar\bj1011-2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="x64\14. 집합과 맵\bj7785-3.cpp">
@@ -454,6 +454,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="x64\23. 동적 계획법 1\bj9184.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\23. 동적 계획법 1\bj1904.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\23. 동적 계획법 1\bj9461.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="x64\23. 동적 계획법 1\bj1912.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
