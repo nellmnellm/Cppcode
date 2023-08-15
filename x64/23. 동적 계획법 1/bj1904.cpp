@@ -3,16 +3,16 @@
 using namespace std;
 
 
-long long int combi(int N, int M) {
+int combi(int N, int M) {
 	long long sum = 1;
 	for (int i = 0; i < M; i++)
 		sum *= (N - i);
 	for (int i=0; i<M; i++)
 		sum /= (i + 1);
-	return sum;
+	return sum % 15746;
 }
 
-long long int kesan(int num) {
+int kesan(int num) {
 	long long sum = 1;
 	for (int i = 1; i <= 500000; i++)
 	{
@@ -21,7 +21,7 @@ long long int kesan(int num) {
 		else
 			break;
 	}
-	return sum;
+	return sum %15746;
 
 }
 
@@ -33,7 +33,7 @@ int main(void)
 	cin.tie(NULL);
 	int N;
 	cin >> N;
-	cout << kesan(N) % 15746;
+	cout << kesan(N);
 
 	return 0;
 }
