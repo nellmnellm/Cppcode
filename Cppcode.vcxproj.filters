@@ -531,5 +531,8 @@
     <ClCompile Include="x64\25. 그리디 알고리즘\bj11399.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="x64\25. 그리디 알고리즘\bj1541.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
