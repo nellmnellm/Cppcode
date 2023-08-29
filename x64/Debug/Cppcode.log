@@ -1,2 +1,3 @@
-﻿  bj2740.cpp
+﻿  bj1654.cpp
+C:\Users\nellm\source\repos\Cppcode\Cppcode\x64\27. 이분 탐색\bj1654.cpp(28,13): warning C4244: '초기화 중': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Cppcode.vcxproj -> C:\Users\nellm\source\repos\Cppcode\Cppcode\x64\Debug\Cppcode.exe
