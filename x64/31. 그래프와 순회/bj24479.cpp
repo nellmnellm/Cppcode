@@ -1,11 +1,34 @@
 #include <iostream>
-#include <vector>
+#include <map>
+#include <unordered_map>
 #include <list>
 
 using namespace std;
 
 
 
+
+bool dfs(map<int, list<int>>& graph, unordered_map<int, bool>& memo, int current, int target) {
+	if (current == target)
+	{
+		memo[current] = true;
+		return true;
+	}
+
+	if (memo.find(current) != memo.end())
+		return memo[current];
+
+    for (auto it = graph[current].begin(); it != graph[current].end(); it++) {
+		if (dfs(graph, memo, *it, target))
+		{
+			memo[current] = true;
+			return true;
+		}
+    }
+
+	memo[current] = false;
+    return false;
+}
 
 int main(void) {
 
@@ -14,38 +37,40 @@ int main(void) {
 
 	int N; int M; int R;
 	cin >> N >> M >> R;
-	vector <vector<int>> vec(N);
-
+	map <int, list<int>> graph;
+	unordered_map<int, bool> memo;
 
 	for (int i = 0; i < M; i++)
 	{
 		int num1; int num2;
 		cin >> num1 >> num2;
 		if (num2 == R)
-			vec[0].push_back(num1);
+			graph[R].push_back(num1);
 		else if (num1 == R)
-			vec[0].push_back(num2);
+			graph[R].push_back(num2);
 		else
 		{
-			vec[num1].push_back(num2);
+			graph[num1].push_back(num2);
 		}
 	}
 
+   
 	int count = 1;
-	for (int i = 0; i < N; i++)
+	for (int i = 1; i <= N; i++)
 	{
-
-		if (dfs(vec, 0, i + 1))
+		dfs(graph, memo, i, R);
+		if (i == R)
+		{
+			cout << '1' << endl;
+		}
+		else if (memo[i])
 		{
 			count++;
-			cout << count << '\n';
+			cout << count << endl;
+			
 		}
-		else if (i + 1 == R)
-			cout << 1 << '\n';
 		else
-			cout << 0 << '\n';
+			cout << '0' << endl;
 	}
-
-
-	return 0;
+    return 0;
 }
