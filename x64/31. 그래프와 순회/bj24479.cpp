@@ -1,34 +1,34 @@
 #include <iostream>
 #include <map>
 #include <unordered_map>
-#include <list>
+#include <set>
+#include <algorithm>
+
 
 using namespace std;
 
 
 
+void dfs(map <int, set<int>>& graph, unordered_map<int, int> &memo, int R, int N, int &count)
+{
 
-bool dfs(map<int, list<int>>& graph, unordered_map<int, bool>& memo, int current, int target) {
-	if (current == target)
+	
+
+
+	if (memo[R])
+		return;
+	count++;
+	memo[R] = count;
+	
+		
+	for (auto it = graph[R].begin(); it != graph[R].end(); it++)
 	{
-		memo[current] = true;
-		return true;
+		dfs(graph, memo, *it, N, count);
 	}
-
-	if (memo.find(current) != memo.end())
-		return memo[current];
-
-    for (auto it = graph[current].begin(); it != graph[current].end(); it++) {
-		if (dfs(graph, memo, *it, target))
-		{
-			memo[current] = true;
-			return true;
-		}
-    }
-
-	memo[current] = false;
-    return false;
+		
 }
+
+
 
 int main(void) {
 
@@ -37,40 +37,33 @@ int main(void) {
 
 	int N; int M; int R;
 	cin >> N >> M >> R;
-	map <int, list<int>> graph;
-	unordered_map<int, bool> memo;
+	map <int, set<int>> graph;
+	unordered_map<int, int> memo;
 
 	for (int i = 0; i < M; i++)
 	{
 		int num1; int num2;
 		cin >> num1 >> num2;
-		if (num2 == R)
-			graph[R].push_back(num1);
-		else if (num1 == R)
-			graph[R].push_back(num2);
-		else
-		{
-			graph[num1].push_back(num2);
-		}
+		graph[num1].insert(num2);
+		graph[num2].insert(num1);
 	}
+	int count = 0;
 
-   
-	int count = 1;
+	dfs(graph, memo, R, N, count);
+
 	for (int i = 1; i <= N; i++)
 	{
-		dfs(graph, memo, i, R);
-		if (i == R)
+		
+		if (memo[i])
 		{
-			cout << '1' << endl;
-		}
-		else if (memo[i])
-		{
-			count++;
-			cout << count << endl;
-			
+			cout << memo[i] << '\n';
 		}
 		else
-			cout << '0' << endl;
+			cout << 0 << '\n';
 	}
+		
+
+
+
     return 0;
 }
